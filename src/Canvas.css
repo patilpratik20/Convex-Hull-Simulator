@@ -1,0 +1,343 @@
+/* canvascss Container */
+.canvascss-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+/* canvascss */
+.canvascss {
+  border: 0px solid;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-left: 40px;
+  /* background-color: #ffffff; */
+  border-radius: 8px;
+  border-color: #1919a6;
+  background-color: rgb(0, 0, 20);
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px yellow, 0 0 20px #ff0;
+}
+
+/* Buttons Container */
+.buttons-container {
+  /* margin-top: 20px;
+  text-align: left; */
+
+}
+
+/* Button Styles */
+.buttons {
+  background-color: yellow; /* Pacman Yellow */
+  color: #000; /* Black */
+  border: none;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+  font-family: 'Press Start 2P', cursive; /* Retro game font */
+}
+
+
+.buttons:hover {
+  background-color: #000; /* Black */
+  color: #FFD700; /* Pacman Yellow */
+}
+
+/* Small Text */
+.smalls-text {
+  font-size: 30px;
+  color: #000000;
+}
+
+/* Heading and Instructions */
+h1, .instructions {
+  color: #000000;
+  margin-top: 10px;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kpstext {
+  color: #000000;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  color: #ffff00;
+  text-shadow: 4px 4px 2.5px #4caf50, 4px 4px 5px #4caf50, 4px 4px 7.5px #00b4ff;
+}
+
+h4 {
+  color: #000000;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: #000000;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input and Label Styles */
+.input-label {
+  display: block;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.input-field {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #1e1818;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 500px;
+  margin-right: 10px;
+
+}
+
+
+.input-container {
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-start; /* Align items to the right */
+}
+
+.input-container input {
+  margin-right: 14px; /* Add some space between input and button */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.centered-input {
+  position: relative;
+  /* background: linear-gradient(to right, #4caf50, #4caf50, #00b4ff); */
+  border: none;
+  color: white;
+  padding: 15px 0px 15px 0px; /* Adjust padding to accommodate the text */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 10px;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s ease-out;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: center;
+  margin-left: 35px;
+  border: 0px solid;
+  border-color: #1919a6;
+  background-color: rgb(0, 0, 20);
+  box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px yellow, 0 0 10px #ff0;
+}
+
+.centered-input:hover {
+  box-shadow: 0 5px 2.5px yellow, 0 5px 5px white, 0 5px 20px white, 0 5px 10px #ff0;
+}
+
+.textbox-container {
+  position: absolute;
+  top: 675px; /* Adjust as needed */
+  left: 650px; /* Adjust as needed */ 
+  text-align: right;
+  border: 0px solid;
+  border-color: #1919a6;
+  box-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px yellow, 0 0 10px #ff0;
+}
+
+.custom-textbox {
+  width: 973px; /* Set a fixed width or adjust as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical; /* Allow vertical resizing */
+  font-family: 'Press Start 2P', cursive;
+  background-color: rgb(0, 0, 20);
+  color: #fff; /* Text color */
+}
+
+.custom-textbox:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: #007bff; /* Change border color on focus */
+}
+
+.custom-textbox::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+
+/* Error and Success Messages */
+.error-message {
+  color: #FF0000;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* NextButton.css */
+
+.next-button {
+  position: relative;
+  /* background: linear-gradient(to right, #4caf50, #4caf50, #00b4ff); */
+  background: linear-gradient(to right, yellow, rgb(138, 255, 20), rgb(91, 255, 58));
+  border: none;
+  color: white;
+  padding: 15px 32px 15px 16px; /* Adjust padding to accommodate the arrow */
+  /* text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s ease-out;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.next-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust arrow position */
+  transform: translateY(-50%);
+  width: 20px; /* Adjust arrow width */
+  height: auto; /* Maintain aspect ratio */
+  background-image: url('./arrow-next.png'); /* Set arrow image */
+  background-size: contain; /* Scale image to fit */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+
+.next-button:hover {
+  background: linear-gradient(to right, #4caf50, #00b4ff);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.next-button:active {
+  background: linear-gradient(to right, #4caf50, #4caf50, #00b4ff);
+  transform: translateY(1px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.prev-button {  
+  /* background: linear-gradient(to right, yellow, rgb(138, 255, 20), rgb(91, 255, 58)); */
+  background-color: #ffff00;
+  border: none;
+  color: rgb(0, 0, 20);
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 30px; /* Larger border radius for a smoother appearance */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Improved box shadow */
+  transition: background-color 0.3s, transform 0.2s ease-out; /* Smooth transitions */
+  gap: 0px;
+  margin-left: 35px;
+  margin-right: 0px;
+  box-shadow: 0 2px 2.5px #4caf50, 0 2px 5px #4caf50, 0 2px 7.5px #00b4ff;
+}
+
+.prev-button:hover {
+  background: linear-gradient(to right, #4caf50, #00b4ff); /* Gradient color change on hover */
+  transform: translateY(-2px); /* Move the button slightly up */
+  /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); Enhanced shadow on hover */
+  box-shadow: 0 5px 2.5px yellow, 0 5px 5px white, 0 5px 20px white, 0 5px 10px #ff0;
+
+}
+
+.prev-button:active {
+  background: linear-gradient(to right, #4caf50, #4caf50, #00b4ff); /* Restore gradient color when clicked */
+  transform: translateY(1px); /* Button push effect on click */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adjusted shadow */
+}
+
+
+.add-button {  
+  /* background: linear-gradient(to right, yellow, rgb(138, 255, 20), rgb(91, 255, 58)); */
+  background-color: #ffff00;
+  border: none;
+  color: rgb(0, 0, 20);
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 30px; /* Larger border radius for a smoother appearance */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Improved box shadow */
+  transition: background-color 0.3s, transform 0.2s ease-out; /* Smooth transitions */
+  gap: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  box-shadow: 0 2px 2.5px #4caf50, 0 2px 5px #4caf50, 0 2px 7.5px #00b4ff;
+}
+
+.add-button:hover {
+  background: linear-gradient(to right, #4caf50, #00b4ff); /* Gradient color change on hover */
+  transform: translateY(-2px); /* Move the button slightly up */
+  /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); Enhanced shadow on hover */
+  box-shadow: 0 5px 2.5px yellow, 0 5px 5px white, 0 5px 20px white, 0 5px 10px #ff0;
+
+}
+
+.add-button:active {
+  background: linear-gradient(to right, #4caf50, #4caf50, #00b4ff); /* Restore gradient color when clicked */
+  transform: translateY(1px); /* Button push effect on click */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adjusted shadow */
+}
+
+.textclass {
+  padding-top: 18px;
+  font-size: 20px;
+  padding-bottom: 18px;
+}
+
+
+.success-message {
+  color: #008000;
+  font-size: 14px;
+  margin-top: 5px;
+}

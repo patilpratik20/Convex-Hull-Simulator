@@ -1,0 +1,160 @@
+/* App.css */
+.app {
+  background-color: rgb(0, 0, 20);
+  color: black;
+  font-family: 'Press Start 2P', cursive;
+  text-align: left;
+}
+
+html{
+  background-color: rgb(0, 0, 20);
+}
+
+.title {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: opacity 0.5s ease-in-out;
+  transform: translate(-50%, -60%); /* this will center the div */
+  background-color: rgb(0, 0, 20);
+}
+
+.option-btn-kps {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  margin: 20px;
+  padding: 20px;
+  font-size: 2em;
+  -webkit-text-stroke-width: 0px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.option-btn-kps.active {
+  -webkit-text-stroke-width: 0px;
+  transition: background-color 0.3s ease;
+  background-color: yellow; /* Pacman color */
+  font-size: 2em;
+  color: black;
+}
+
+.option-btn-kps:hover {
+  -webkit-text-stroke-width: 0px;
+  transition: background-color 0.3s ease;
+  background-color: yellow; /* Pacman color */
+  font-size: 2em;
+  color: black;
+}
+
+.option-btn-jarvis {
+  background-color: yellow; /* Pacman color */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  margin: 20px;
+  padding: 20px;
+  font-size: 2em;
+  -webkit-text-stroke-width: 0px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.option-btn-jarvis.active {
+  -webkit-text-stroke-width: 0px;
+  transition: background-color 0.3s ease;
+  background-color: black;
+  font-size: 2em;
+  color: white;
+}
+
+.option-btn-jarvis:hover {
+  -webkit-text-stroke-width: 0px;
+  transition: background-color 0.3s ease;
+  background-color: black;
+  font-size: 2em;
+  color: white;
+}
+
+.option-btn {
+  height: 50%; /* Each option takes up half the space initially */
+  transition: all 0.5s ease-in-out;
+}
+
+.option-btn-kps:hover {
+  -webkit-text-stroke-width: 0px;
+  transition: background-color 0.3s ease;
+  background-color: yellow; /* Pacman color */
+  font-size: 2em;
+  color: black;
+  /* transform: translateY(20%); Move KPS down */
+}
+
+/* .option-btn-kps:hover ~ .option-btn-jarvis {
+  transform: translateY(20vh); /* Move Jarvis down by more */
+  /* transition: transform 0.3s ease;
+} */
+
+/* #app.hover-top-half .option-btn-kps {
+  transform: translateY(20vh) scale(1.5);
+  font-size: 3em;
+  transition: transform 0.3s ease;
+} */
+
+#app.hover-top-half #kps-btn {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+  font-size: 3em;
+}
+
+#app.hover-top-half .option-btn-jarvis {
+  transform: translateY(20vh); /* Move Jarvis down by more */
+  transition: transform 0.3s ease;
+}
+
+#app.hover-bottom-half #jarvis-btn {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+  font-size: 3em;
+}
+
+#app.hover-bottom-half .option-btn-kps {
+  transform: translateY(-20vh); /* Move Jarvis down by more */
+  transition: transform 0.3s ease;
+}
+
+.canvas-container {
+  position: relative;
+}
+
+.pacman {
+  position: absolute;
+  animation: bounce 2s infinite;
+  font-size: 2em;
+  /* z-index: 2; */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
