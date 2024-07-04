@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convex Hull Algorithms</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        text-align: justify; /* Justify text */
+    }
+    h1, h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    ol {
+        padding-left: 20px;
+    }
+    p, li {
+        line-height: 1.6;
+    }
+    img {
+        display: block;
+        margin: 20px auto; /* Center the image horizontally */
+        max-width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Convex Hull Algorithms</h1>
+
+    <h2>Jarvis's March Algorithm</h2>
+
+    <p>1. <strong>Initial Selection:</strong> The algorithm starts by identifying the leftmost point as the starting point, known to be part of the convex hull, due to its x-coordinate being the smallest. This process takes linear time.</p>
+
+    <p>2. <strong>Iterative Selection:</strong> Successive convex hull vertices are found by iteratively selecting the point that appears farthest to the right when viewed from the current point. This process involves pivoting steps and continues until the algorithm returns to the starting point. Each vertex selection is based on a series of counter-clockwise tests, executed in linear time.</p>
+
+    <p>3. <strong>Time Complexity Analysis:</strong> Although the algorithm takes O(n) time for each convex hull vertex selection, its worst-case running time is O(n<sup>2</sup>). However, this analysis overlooks its efficiency when the convex hull has few vertices. Reframing the time complexity as O(nh), where h is the number of convex hull vertices, illustrates that the algorithm is output-sensitive. In scenarios where h is small (e.g., h=3), the algorithm operates in O(n) time.</p>
+
+    <img src="jarvis.jpg" alt="Jarvis Image">
+
+    <h2>Kirkpatrick–Seidel Algorithm</h2>
+
+    <p>1. <strong>Initial Splitting:</strong> Similar to other divide-and-conquer methods for convex hulls, the Kirkpatrick–Seidel algorithm begins by splitting the input point set into two roughly equal-sized subsets based on the median of their x-coordinates. This process is completed in linear time.</p>
+
+    <p>2. <strong>Edge Identification:</strong> In contrast to other algorithms, Kirkpatrick–Seidel starts by identifying the convex hull edges intersecting the vertical line defined by the median x-coordinate. Surprisingly, this step takes linear time.</p>
+
+    <p>3. <strong>Non-contributing Points Discard:</strong> After determining the edges intersecting the vertical line, the algorithm discards points on the left and right sides of the splitting line that cannot contribute to the final hull. This pruning step is crucial for efficiency.</p>
+
+    <p>4. <strong>Recursive Processing:</strong> The algorithm then recursively processes the remaining points. It conducts separate recursions for the upper and lower portions of the convex hull. In the upper hull recursion, points vertically below the bridge edge are discarded, while in the lower hull recursion, points above the bridge edge are discarded.</p>
+
+    <p>5. <strong>Termination:</strong> Recursion ends when a sufficiently small subset of points is reached, enabling direct computation of the convex hull using simpler algorithms like Graham's scan or Jarvis march.</p>
+     
+    <p>6. <strong>Time Complexity:</strong> The key efficiency of the Kirkpatrick–Seidel algorithm lies in its adept identification of convex hull edges intersecting the median x-coordinate line and subsequent elimination of non-contributing points. This approach yields a time complexity of O(n log h), where n is the number of input points and h is the number of points in the convex hull. As such, the algorithm is output-sensitive, demonstrating efficient performance for large-scale problems with relatively small convex hull sizes compared to the total input points.</p>
+    <img src="kps.jpg" alt="kps Image">
+
+    <h1>Comparative Analysis of Time Complexity  </h1>
+    <img src="Time_Complexity.png" alt="Time_Complexity Image">
+
+
+
+
+
+</div>
+
+</body>
+</html>
+
+
+

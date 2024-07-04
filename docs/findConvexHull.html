@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Namespace: findConvexHull</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">findConvexHull</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>findConvexHull</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>Finds the convex hull of a set of points.</p></div>
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".findHull"><span class="type-signature">(static) </span>findHull<span class="signature">(points)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The <code>findHull</code> function in JavaScript computes the convex hull of a set of points using a divide and
+conquer algorithm.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>points</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The <code>findHull</code> function you provided seems to be implementing the Convex Hull
+algorithm. The algorithm computes the convex hull of a set of points using the Divide and Conquer
+approach.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The function <code>findHull</code> is returning the final convex hull of the input points after
+performing the necessary computations and merging the upper and lower hulls.</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".findMedian"><span class="type-signature">(static) </span>findMedian<span class="signature">(arr)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The <code>findMedian</code> function takes an array of numbers, sorts it in ascending order, and returns the
+median value.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The <code>arr</code> parameter in the <code>findMedian</code> function is an array of numbers for which we
+want to find the median. The function sorts the array in ascending order and then calculates the
+median value.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The findMedian function is returning the median value of the input array after sorting it
+in ascending order.</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".get_T"><span class="type-signature">(static) </span>get_T<span class="signature">(p1, p2, points, flag)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The function <code>get_T</code> calculates and returns a subset of points that lie between two given points
+based on a specified condition.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>p1</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>It looks like you were about to provide some information about the parameters for the
+<code>get_T</code> function. Please go ahead and provide the details for the <code>p1</code> parameter so that I can
+assist you further.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>p2</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>It seems like you were about to provide some information about the parameters, but you
+stopped after mentioning <code>p2</code>. How can I assist you further with this code snippet?</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>points</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>It seems like you were about to provide some information about the <code>points</code>
+parameter but it got cut off. Could you please provide more details or let me know how I can assist
+you further with the <code>points</code> parameter in the <code>get_T</code> function?</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>flag</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The <code>flag</code> parameter in the <code>get_T</code> function is used to determine whether to include
+points with a slope greater than or less than the calculated slope in the <code>upper_T</code> array. If <code>flag</code>
+is <code>false</code>, only points with a slope greater than the calculated slope will be included</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The function <code>get_T</code> is returning an array <code>upper_T</code> containing points that lie between
+points <code>p1</code> and <code>p2</code> based on the slope comparison with the flag condition. The array <code>upper_T</code> also
+includes points <code>p1</code> and <code>p2</code>.</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".get_lower_bridge"><span class="type-signature">(static) </span>get_lower_bridge<span class="signature">(points, median)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The function <code>get_lower_bridge</code> in JavaScript sorts points, calculates median slope, and recursively
+finds the lower bridge of a set of points based on the median.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>points</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The <code>points</code> parameter in the <code>get_lower_bridge</code> function represents an array of
+points on a 2D plane. Each point is represented as an object with <code>x</code> and <code>y</code> coordinates. The
+function sorts these points based on their <code>x</code> values and then performs calculations to find</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>median</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The <code>get_lower_bridge</code> function you provided seems to be calculating the lower
+bridge of a set of points based on a given median value. However, it looks like the description of
+the <code>median</code> parameter is missing. Could you please provide more information about what the <code>median</code>
+parameter represents in this</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The function <code>get_lower_bridge</code> is returning the lower bridge points based on the input
+points and median value. It recursively calls itself to find the lower hull points and eventually
+returns the lower bridge points.</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".get_lower_hull"><span class="type-signature">(static) </span>get_lower_hull<span class="signature">(pmin, pmax, points)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The function <code>get_lower_hull</code> calculates the lower hull of a set of points using the divide
+and conquer approach in computational geometry.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pmin</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>It seems like you have shared a part of a code snippet for computing the lower
+hull in a convex hull algorithm. However, you have not provided the complete context or the
+definition of some functions like <code>kthSmallest</code>, <code>get_lower_bridge</code>, and <code>get_T</code>.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pmax</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>It seems like the code snippet you provided is a part of a larger algorithm for
+computing the convex hull of a set of points. The <code>get_lower_hull</code> function is responsible for
+finding the lower hull of the points based on the given parameters.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>points</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>It seems like the code snippet you provided is part of a larger algorithm for
+computing the convex hull of a set of points. The <code>get_lower_hull</code> function is responsible for
+finding the lower hull of the points based on certain conditions.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The function <code>get_lower_hull</code> is returning the lower hull of a set of points. It
+recursively computes the lower hull by finding the bridge edge, splitting the points into left
+and right sets, and then recursively calling itself on the left and right sides of the bridge
+edge. The final result is the lower hull of the input points.</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".get_upper_bridge"><span class="type-signature">(static) </span>get_upper_bridge<span class="signature">(points, median)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The function <code>get_upper_bridge</code> in JavaScript sorts points, calculates median slope, and
+recursively finds the upper hull of a set of points.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>points</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The <code>points</code> parameter in the <code>get_upper_bridge</code> function represents an array
+of points on a 2D plane. Each point is represented as an object with <code>x</code> and <code>y</code> coordinates.
+The function is designed to find the upper bridge of these points based on a given median value</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>median</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The code snippet you provided seems to be a function for finding the upper
+bridge in a set of points based on a given median value. The function recursively narrows down
+the points to find the upper bridge.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The function <code>get_upper_bridge</code> is returning the result of recursively calling itself
+with the <code>candidates</code> array and the <code>median</code> value. This recursive call is used to find the
+upper bridge of the given set of points. The function continues to remove non-hull points based
+on the median slope and certain conditions until it finds the upper bridge.</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".get_upper_hull"><span class="type-signature">(static) </span>get_upper_hull<span class="signature">(pmin, pmax, points)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The function <code>get_upper_hull</code> calculates the upper hull of a set of points using the divide
+and conquer algorithm for finding the convex hull.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pmin</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The <code>pmin</code> parameter in the <code>get_upper_hull</code> function represents the minimum
+point on the x-axis among the input points. It is used to determine the starting point for
+constructing the upper hull of the convex hull.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pmax</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>It seems like the description of the <code>pmax</code> parameter is missing in the
+provided code snippet. Could you please provide more information or context about what <code>pmax</code>
+represents in this function? This will help me assist you better in understanding the code.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>points</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>It seems like the description of the <code>points</code> parameter is missing in your
+code snippet. Could you please provide more information about what the <code>points</code> parameter
+represents in your <code>get_upper_hull</code> function? This will help me better understand the context
+and provide you with more accurate assistance.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The function <code>get_upper_hull</code> returns the upper hull of a set of points after
+performing certain calculations and recursive calls.</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".kthSmallest"><span class="type-signature">(static) </span>kthSmallest<span class="signature">(arr, l, r, k)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The function <code>kthSmallest</code> finds the kth smallest element in an array using the median of medians
+algorithm.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The <code>arr</code> parameter in the <code>kthSmallest</code> function represents an array of elements from
+which you want to find the kth smallest element.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>l</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The parameter <code>l</code> in the <code>kthSmallest</code> function represents the starting index of the
+subarray within the main array <code>arr</code> that we are considering. It indicates the left boundary of the
+subarray.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>r</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The parameter <code>r</code> in the <code>kthSmallest</code> function represents the index of the last element
+in the array <code>arr</code>. It indicates the right boundary of the subarray being considered for finding
+the kth smallest element.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>k</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The parameter <code>k</code> in the <code>kthSmallest</code> function represents the position of the element
+you want to find in the sorted array. For example, if <code>k</code> is 1, you are looking for the smallest
+element in the array. If <code>k</code> is 2, you</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The function <code>kthSmallest</code> is returning the kth smallest element in the given array <code>arr</code>
+within the range specified by <code>l</code> and <code>r</code>. If the value of <code>k</code> is within the valid range (greater
+than 0 and less than or equal to the size of the subarray), the function performs a series of
+operations to find the kth smallest element using a</p>
+</div>
+
+
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".removeDuplicates"><span class="type-signature">(static) </span>removeDuplicates<span class="signature">(arr)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The <code>removeDuplicates</code> function takes an array of objects and removes any duplicate objects based on
+their <code>x</code> and <code>y</code> properties.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>It looks like the code you provided is a function called <code>removeDuplicates</code> that takes
+an array <code>arr</code> as a parameter. The function iterates over the array and removes any duplicate
+elements based on the <code>x</code> and <code>y</code> properties of the objects in the array.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+<nav>
+    <h2><a href="index.html">Index</a></h2>    <h2><a href="Canvas_kps_final.html">KPS</a></h2><h3>Function</h3><ul><li><a href="Pacman_complete.html">Pacman</a></li><li><a href="Ghost_complete.html">Ghost</a></li></ul><h3>Classes</h3><ul><li><a href="ConvexHull.html">ConvexHull</a></li></ul><h3>Global</h3><ul><li><a href="Canvasvar.html">Canvas</a></li><li><a href="global.html#colorList">colorList</a></li><li><a href="global.html#draw">draw</a></li><li><a href="global.html#draw_in_nex">draw_in_next</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Tue Apr 02 2024 20:55:03 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
